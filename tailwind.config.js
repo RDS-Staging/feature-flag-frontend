@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 export default {
   content: [
     "./index.html",
@@ -6,13 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
-      },
       colors: {
-        background: {
-          DEFAULT: '#ffffff',
-        },
         primary: {
           DEFAULT: '#1d1283',
           light: '#041187',
@@ -20,7 +14,8 @@ export default {
         secondary: {
           DEFAULT: '#000000',
           light: '#aeaeae',
-        }
+        },
+        accent: '#87d870',
       },
     },
   },
