@@ -3,5 +3,7 @@ import App from '../src/App';
 
 test('renders the app component', () => {
   render(<App />);
-  expect(screen.getByText(/Real Dev Sqaud/i)).toBeInTheDocument();
+
+  //check if navbar exists
+  expect(screen.getByTestId('navbar')).toBeInTheDocument();
 });
