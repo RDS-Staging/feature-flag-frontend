@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
 
         <div className="ml-auto">
           <button
-            className="px-4 py-2 text-white bg-secondary hover:bg-accent rounded"
+            className="rounded bg-secondary px-4 py-2 text-white hover:bg-accent"
             aria-label="Sign In"
             data-testid="navbar-signin-btn"
           >
