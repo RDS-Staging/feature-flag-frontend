@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { getConfig, validateEnv } from '../config';
+import RDSLogo from '../assets/rds-logo.svg';
 
 const Navbar: React.FC = () => {
   const { welcomeSiteUrl, membersSiteUrl, statusSiteUrl } = getConfig();
@@ -14,7 +15,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className="fixed left-0 top-0 w-full border-b border-gray-100 bg-primary p-2"
+      className="fixed left-0 top-0 z-50 w-full border-b border-gray-100 bg-primary p-2"
       aria-label="Main Navigation"
       data-testid="navbar"
     >
@@ -25,11 +26,7 @@ const Navbar: React.FC = () => {
           aria-label="Home"
           data-testid="navbar-home-link"
         >
-          <img
-            src="/assets/rds-logo.svg"
-            alt="RDS Logo"
-            className="h-12 w-12"
-          />
+          <img src={RDSLogo} alt="RDS Logo" className="h-12 w-12" />
         </a>
 
         <div className="flex items-center space-x-6">
