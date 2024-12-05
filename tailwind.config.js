@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -15,9 +15,6 @@ export default {
         ],
       },
       colors: {
-        background: {
-          DEFAULT: '#ffffff',
-        },
         primary: {
           DEFAULT: '#1d1283',
           light: '#041187',
@@ -26,6 +23,7 @@ export default {
           DEFAULT: '#000000',
           light: '#aeaeae',
         },
+        accent: '#87d870',
       },
     },
   },
